@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    My Emanote Site
+    content – My Emanote Site
   </title>
   
     
-      <meta property='og:description' content='Welcome to Emanote.' />
+      <meta property='og:description' content />
       <meta property='og:site_name' content='My Emanote Site' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='My Emanote Site' />
+      <meta property='og:title' content='content' />
     
     
       <base href='/' />
@@ -167,6 +167,17 @@
           
         </li>
         
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href=''>
+                My Emanote Site
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+        
       </ul>
     </div>
     <button class='inline px-2 py-1 bg-gray-50 outline-none cursor-pointer focus:outline-none' title='Search (Ctrl+K)' type='button' onclick='window.emanote.stork.toggleSearch()'>
@@ -235,9 +246,7 @@
             
               <!-- Variable bindings for this tree-->
   
-    
   
-
 
 
   
@@ -249,26 +258,61 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='content' href='content.html'>
+    <a class='font-bold text-blue-600 hover:underline truncate' title='content' href='content.html'>
       content
     </a>
     
       
-        <span class='text-gray-300' title='1 children inside'>
-          1
-        </span>
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='index' href='content'>
+      index
+    </a>
+    
       
+        
     
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+</div>
+    
   
 </div>
             
@@ -281,24 +325,37 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    My Emanote Site
+    content
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  
+  <nav>
+  <div class='mb-8'>
+    <header data-nosnippet class='pb-2 mb-2 font-semibold text-gray-600'>
+      Pages matching path './*'
+    </header>
+    <ul>
+      
+        <li>
+          <div class='flex flex-wrap my-2'>
+            
+              <span data-nosnippet class='mr-2 text-right text-gray-600'>
+              </span>
+            
+            <a class='flex-1 text-blue-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='content'>
+              index
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+</nav><div class='text-gray-400 border-t-2 inline-block pt-0.5'>
     <p class='mb-3'>
-      Welcome to <a href='https://emanote.srid.ca/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Emanote</a>.
+      Note: To override the auto-generated content here, create a file named one of: <span class='font-mono text-sm'>content.md, content.org</span>
     </p>
-  
-    <p class='mb-3'>
-      Your notes should be visible in the sidebar (to the left), or in the <a href='-/all.html' class='text-blue-600 mavenLinkBold hover:underline'>index</a> page (see sidebar & footer). To get rid of this message, add a file named <code class='py-0.5 px-0.5 bg-gray-100'>index.md</code> (or <code class='py-0.5 px-0.5 bg-gray-100'>index.org</code>).
-    </p>
-  
-    <p class='mb-3'>
-      <span class='font-bold bg-gray-100 py-0.5 px-2 rounded-lg emanote:inline-tag:emanote/default-layer' title='Tag' data-tag='emanote/default-layer'><a href='-/tags/emanote/default-layer.html' title='Tag' class='text-blue-600 mavenLinkBold hover:underline'>#emanote/default-layer</a></span>
-    </p>
-  
+  </div>
   <!-- What goes in this file will appear below the note body-->
 </article>
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
@@ -307,15 +364,6 @@
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
-    
-      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
-        Perhaps Emanote should inject tagMetas with urls.
-      -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/emanote/default-layer.html'>
-        <!-- DoNotFormat -->
-        #emanote/default-layer
-        <!-- DoNotFormat -->
-      </a>
     
   </section>
 
