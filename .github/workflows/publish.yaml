@@ -16,7 +16,8 @@ jobs:
             -e LANG=C.UTF-8 -e LC_ALL=C.UTF-8 \
             --tmpfs /tmp \
             -v $PWD:/data \
-            sridca/emanote emanote -L "/data" gen /data/output.docker
+            sridca/emanote emanote -L "/data;/data/.deploy/github" \
+            gen /data/output.docker
           cp -r output.docker output
           bash output/_emanote-bin/compile-css
       - name: Deploy to gh-pages 🚀
