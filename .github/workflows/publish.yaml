@@ -17,7 +17,7 @@ jobs:
             --tmpfs /tmp \
             -v $PWD:/data \
             sridca/emanote emanote -L "/data;/data/.deploy/github" \
-            gen /data/output.docker
+            gen /data/output.docker --allow-broken-links
           cp -r output.docker output
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
