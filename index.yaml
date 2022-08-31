@@ -1,8 +1,6 @@
 page:
   siteTitle: Wonder's notes
   siteName: celeste notes
-  headHtml: |
-    <meta name="generator" content="Emanote" />
 
 template:
   # name: /templates/layouts/note
