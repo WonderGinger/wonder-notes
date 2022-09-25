@@ -3,7 +3,7 @@
 * [[3a.arb|Resort]]
 * [[4a.arb|Ridge]]
 * [[5a.arb|Temple]]
-* [[6a-cassette]]
+* [[6a-cassette.arb|6a cassette]]
 * [[6b|Reflection]]
 * [[7a.arb|Summit]]
 * [[8a.arb|Core]]
