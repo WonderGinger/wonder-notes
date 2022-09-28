@@ -4,6 +4,6 @@
 * [[4a.arb|Ridge]]
 * [[5a.arb|Temple]]
 * [[6a-cassette.arb|6a cassette]]
-* [[6b|Reflection]]
+* [[6b.arb|Reflection]]
 * [[7a.arb|Summit]]
 * [[8a.arb|Core]]
