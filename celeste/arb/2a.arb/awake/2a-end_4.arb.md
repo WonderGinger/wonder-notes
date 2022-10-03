@@ -3,10 +3,11 @@
 
 [[2a.arb|⌂ back]]
 
-[[2a-end_3cb.arb|next →]]
+[[2a-end_3b.arb|next →]]
 
 :::
 
 ![[2a-end_4]]
 
 #arb #2a #2a-end_4
+
