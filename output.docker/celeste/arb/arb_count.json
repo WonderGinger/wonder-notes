@@ -1,0 +1,47 @@
+{
+    "1arb": {
+        "total": 20,
+        "start": 6,
+        "crossing": 9,
+        "chasm": 5
+    },
+    "2arb": {
+        "total": 18,
+        "start": 9,
+        "intervention": 8,
+        "awake": 1
+    },
+    "3arb": {
+        "total": 27,
+        "start": 11,
+        "huge_mess": 7,
+        "elevator_shaft": 4,
+        "presidential_suite": 3
+    },
+    "4arb": {
+        "total": 29,
+        "start": 8,
+        "shrine": 9,
+        "old_trail": 7,
+        "cliff_face": 5
+    },
+    "5arb": {
+        "total": 31,
+        "start": 12,
+        "depths": 11,
+        "unravelling": 1,
+        "search": 6,
+        "rescue": 1
+    },
+    "7arb": {
+        "total": 47,
+        "start": 4,
+        "500m": 6,
+        "1000m": 6,
+        "1500m": 8,
+        "2000m": 8,
+        "2500m": 8,
+        "3000m": 7
+    }
+}
+
