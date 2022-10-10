@@ -16,7 +16,7 @@ jobs:
             -e LANG=C.UTF-8 -e LC_ALL=C.UTF-8 \
             --tmpfs /tmp \
            -v $PWD:/data sridca/emanote \
-            emanote --layers "/data/.deploy/github;/data/content" \
+            emanote --layers "/data/.deploy/github;/data/" \
             gen /data/output.docker
           cp -r output.docker output
 #  gen /data/output.docker --allow-broken-links
