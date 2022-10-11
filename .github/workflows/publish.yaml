@@ -24,4 +24,15 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: deploy
+      - uses: actions/deploy-pages@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output/
+          publish_branch: gh-pages
+          allow_empty_commit: false
+          keep_files: false
+          force_orphan: false
+          enable_jekyll: false
+          disable_nojekyll: false
+          exclude_assets: .github
