@@ -19,30 +19,20 @@
 ![](https://cdn.frankerfacez.com/emoticon/464328/1)
 :::
 
-todo: record a clip for 2a-d3.2, 2a-d2.1 2a-d0.2
-re-record 2a start
-update 5a-a-15 (skip bubble)
+todo: re-record 2a start
+
+todo: update 5a-a-15 (skip bubble)
+
+todo: shift splits down by 1 (name of split is 1st room)
+
+
+* [[2a-d0.arb|2a d0 berry - Upright demo?]]
 
 #### warmup
 
-
-#### topics for coaching
-* stew method (pete vs carlos)
-* good strats vs bad
-* strat choice based on goals
-* goals
-    * 49, benefits of smaller goals, drawbacks of lofty goals
-* whether doing runs is good practice or not
-    * nerves
-    * why pb by a little?
-    * fullgame vs il vs cp vs room
-    * benchmarks, progress report
-    * what to do with results
-* varied practice (study, muscle memory, review, notes, updates)
-* building consistency with hard strats
-* what's missing from my approach
-    * simple to iterate and improve on what i know about, not easy if i don't know
-* backups
-* keyboard layout
-* streaming
-* inspirational media
+* [[https://www.youtube.com/watch?v=H6y0D_8kRoU|hands exercise]]
+* jasig: [[3a-05-c.arb]]
+* shaft: [[3a-03-b.arb|retry berries]] -> [[3a-02-d.arb|end]]
+* suite: [[3a-roof06]]
+* undertrail: [[4a-c-00.arb]]
+* summit: [[7a-d-07.arb|turbo demo]]
