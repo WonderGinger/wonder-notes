@@ -8,17 +8,18 @@ jobs:
   emanote:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Build emanote site 🔧
         run: |
-          mkdir output.docker
+          mkdir -p output.docker
           docker run \
             -e LANG=C.UTF-8 -e LC_ALL=C.UTF-8 \
             --tmpfs /tmp \
-            -v $PWD:/data \
-            sridca/emanote emanote -L "/data;/data/.deploy/github" \
+            -v $PWD:/data sridca/emanote \
+            emanote --layers "/data;/data/.deploy/github" \
             gen /data/output.docker --allow-broken-links
           cp -r output.docker output
+#  gen /data/output.docker --allow-broken-links
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
