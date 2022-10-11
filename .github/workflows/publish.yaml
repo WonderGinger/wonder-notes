@@ -11,12 +11,12 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build emanote site 🔧
         run: |
-          mkdir output.docker
+          mkdir -p output.docker
           docker run \
             -e LANG=C.UTF-8 -e LC_ALL=C.UTF-8 \
             --tmpfs /tmp \
-           -v $PWD:/data sridca/emanote \
-            emanote --layers "/data/.deploy/github;/data/" \
+            -v $PWD:/data sridca/emanote \
+            emanote --layers "/data;/data/.deploy/github" \
             gen /data/output.docker --allow-broken-links
           cp -r output.docker output
 #  gen /data/output.docker --allow-broken-links
@@ -24,13 +24,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: deploy
-        uses: actions/deploy-pages@v1
-        with:
-          emit_telemetry: false
-          token: ${{ secrets.GITHUB_TOKEN }}
-          timeout: 600000
-          error_count: 10
-          reporting_interval: 5000
-          artifact_name: github-pages
-          preview: false
+          publish_dir: ./output/
